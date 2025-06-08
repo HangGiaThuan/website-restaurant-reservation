@@ -1,51 +1,4 @@
-
-# Restaurant Table Reservation Website
-
-This is a simple PHP-based website for restaurant table reservations with a menu showcase and admin management interface.
-
-## Features
-
-- Public pages: Home, Menu, Reservation form, Location
-- Admin pages: Login, Dashboard, Manage Menu, Manage Reservations
-- MySQL database backend
-
-## Setup Instructions
-
-1. Import the database:
-
-```bash
-mysql -u root -p < restaurant.sql
-```
-
-2. Configure database connection:
-
-Edit `includes/db.php` and update `$username` and `$password` with your MySQL credentials.
-
-3. Place files in your web server root (e.g., `htdocs` for XAMPP or `www` for WAMP).
-
-4. Make sure `assets/images/` is writable for uploading images from Manage Menu.
-
-5. Access the site in your browser:
-
-```
-http://localhost/restaurant-reservation/index.php
-```
-
-6. Admin login credentials:
-- Username: admin
-- Password: admin123
-
-## Notes
-
-- Use the admin panel to add/edit/delete menu items, and manage reservations.
-- Reservations are initially pending; admins can approve or cancel them.
-- The site uses simple vanilla PHP and minimal dependencies.
-
-Enjoy!
-
----
-
-# Hướng Dẫn Cài Đặt và Mở Trang Web (Tiếng Việt)
+# Hướng Dẫn Cài Đặt và Mở Trang Web
 
 Đây là hướng dẫn giúp bạn cài đặt và chạy website đặt bàn nhà hàng trên máy tính cá nhân.
 
@@ -60,9 +13,8 @@ Enjoy!
 Cách 1:
 Mở command line hoặc terminal, điều hướng tới thư mục chứa file `restaurant.sql`, chạy lệnh:
 
-```bash
+bash
 mysql -u root -p < restaurant.sql
-```
 
 Thay `root` bằng username database của bạn nếu khác. Nhập mật khẩu MySQL khi yêu cầu.
 
@@ -73,12 +25,11 @@ import file `restaurant.sql` trên phpMyAdmin sau đó database sẽ được t�
 
 Mở file `includes/db.php`, sửa biến `$username` và `$password` cho đúng với thông tin MySQL của bạn.
 
-```php
+php
 $host = 'localhost';
 $dbname = 'restaurant_db';
 $username = 'tên_user_mysql_của_bạn';
 $password = 'mật_khẩu_mysql_của_bạn';
-```
 
 3. **Đặt dự án vào thư mục web server**
 
@@ -96,9 +47,7 @@ Copy toàn bộ thư mục `restaurant-reservation` vào thư mục web root c�
 
 Gõ địa chỉ sau vào trình duyệt:
 
-```
 http://localhost/restaurant-reservation/index.php
-```
 
 6. **Đăng nhập quản trị**
 
@@ -114,5 +63,3 @@ Dùng tài khoản mặc định để đăng nhập vào trang quản trị:
 - Giao diện và hệ thống được xây dựng bằng PHP thuần, dễ dàng tùy biến và mở rộng.
 
 Chúc bạn thành công và dùng website hiệu quả!
-
-```
