@@ -1,0 +1,44 @@
+/* Home Page */
+.home-intro {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(to right, #f06595, #ff6b6b);
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+}
+.home-intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.home-intro p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+/* Featured Dishes on Home */
+.featured-dishes {
+    margin-top: 2rem;
+}
+.dish-list {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Location Page */
+.location-info {
+    max-width: 700px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+}
+.map-container iframe {
+    border-radius: 12px;
+}

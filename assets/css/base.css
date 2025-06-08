@@ -1,0 +1,14 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Utility classes (if needed can be added here) */
+
