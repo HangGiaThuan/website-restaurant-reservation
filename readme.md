@@ -13,8 +13,9 @@
 Cách 1:
 Mở command line hoặc terminal, điều hướng tới thư mục chứa file `restaurant.sql`, chạy lệnh:
 
-bash
+```bash
 mysql -u root -p < restaurant.sql
+```
 
 Thay `root` bằng username database của bạn nếu khác. Nhập mật khẩu MySQL khi yêu cầu.
 
@@ -25,11 +26,12 @@ import file `restaurant.sql` trên phpMyAdmin sau đó database sẽ được t�
 
 Mở file `includes/db.php`, sửa biến `$username` và `$password` cho đúng với thông tin MySQL của bạn.
 
-php
+```php
 $host = 'localhost';
 $dbname = 'restaurant_db';
 $username = 'tên_user_mysql_của_bạn';
 $password = 'mật_khẩu_mysql_của_bạn';
+```
 
 3. **Đặt dự án vào thư mục web server**
 
@@ -47,7 +49,9 @@ Copy toàn bộ thư mục `restaurant-reservation` vào thư mục web root c�
 
 Gõ địa chỉ sau vào trình duyệt:
 
+```
 http://localhost/restaurant-reservation/index.php
+```
 
 6. **Đăng nhập quản trị**
 
@@ -63,3 +67,5 @@ Dùng tài khoản mặc định để đăng nhập vào trang quản trị:
 - Giao diện và hệ thống được xây dựng bằng PHP thuần, dễ dàng tùy biến và mở rộng.
 
 Chúc bạn thành công và dùng website hiệu quả!
+
+```
